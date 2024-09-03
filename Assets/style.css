@@ -1,0 +1,297 @@
+/* Reset some default styles */
+body,
+h1,
+h3,
+p,
+form {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set background and font styles for the whole page */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 0;
+  margin: 0;
+}
+
+/* Style the title */
+.title {
+  text-align: center;
+  color: #333;
+  margin: 20px 0;
+}
+
+/* Navbar styling */
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for each form within the navbar */
+.navbar form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* Style for labels and inputs */
+.navbar label {
+  font-size: 14px;
+}
+
+.navbar input[type="text"],
+.navbar select,
+.navbar input[type="date"] {
+  border: 2px solid transparent;
+  border-radius: 100px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  width: 200px;
+}
+
+/* .navbar button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+} */
+
+.navbar button i {
+  font-size: 16px;
+}
+
+.navbar button:hover {
+  background-color: #0056b3;
+}
+
+/* Article grid styling */
+.article-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Style each article card */
+.article-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 15px;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.article-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Article card content styling */
+.article-title {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.article-date,
+.article-author {
+  font-size: 14px;
+  color: #666;
+}
+
+.article-link {
+  text-decoration: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar form {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .article-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* FOR ARTICLE VIEW PAGE */
+
+/* Reset some default styles */
+body,
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set background and font styles for the whole page */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 0;
+  margin: 0;
+}
+
+/* Style the title */
+.title {
+  text-align: center;
+  color: #333;
+  margin: 20px 0;
+}
+
+.recordError {
+  text-align: center;
+  color: #b53e3e;
+  margin: 20px 0;
+}
+
+/* Article grid detail styling */
+.article-grid-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Style each article card */
+.article-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 20px;
+  width: 80%;
+  max-width: 800px;
+  margin: 20px 0;
+}
+
+/* Article title styling */
+.article-title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Article meta information styling */
+.article-meta {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.article-author,
+.article-date {
+  display: inline;
+}
+
+.article-author {
+  font-weight: bold;
+}
+
+.article-date {
+  color: #999;
+}
+
+/* Article content styling */
+.article-content {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+/* Article category styling */
+.article-category {
+  font-size: 14px;
+  color: #007bff;
+  font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .article-card {
+    width: 90%;
+  }
+}
+
+input[type="text"]::-webkit-clear-button,
+input[type="text"]::-webkit-search-cancel-button,
+input[type="text"]::-ms-clear {
+  display: none; /* Hide the clear button */
+}
+
+.article-grid-detail {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* Form create category*/
+.form-container {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.form-group {
+  margin-bottom: 15px;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.form-group textarea {
+  resize: vertical;
+  height: 100px;
+}
+.form-group button {
+  background-color: #5cb85c;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.form-group button:hover {
+  background-color: #4cae4c;
+}
